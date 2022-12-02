@@ -59,10 +59,10 @@ export class UserService {
     }
   };
 
-  async checkDb(res) {
+  async checkDb() {
     try {
       const noOfCollection = await this.userModel.find();
-      res.json({ total: noOfCollection.length });
+      return { total: noOfCollection.length };
     } catch (error) {
       throw new HttpException(error.message, error.status);
     }

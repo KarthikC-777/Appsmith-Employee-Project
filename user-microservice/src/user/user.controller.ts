@@ -56,9 +56,9 @@ export class UserController {
   ) {}
 
   @Get('check-db-collection')
-  async checkDb(@Res() res) {
+  async checkDb() {
     try {
-      await this.userService.checkDb(res);
+      return await this.userService.checkDb();
     } catch (error) {
       throw new HttpException(error.message, error.status);
     }
