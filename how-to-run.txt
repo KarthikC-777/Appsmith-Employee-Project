@@ -1,0 +1,6 @@
+step1: If localtunnel is already installed on local machine skip step2 
+
+step2: sudo npm install -g localtunnel ,
+
+step 3: run below command in terminal
+        lt --subdomain appsmith-project --port 3000

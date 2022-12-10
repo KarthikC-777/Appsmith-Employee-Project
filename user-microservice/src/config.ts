@@ -7,3 +7,8 @@ export const password = process.env.PASSWORD || 'guest';
 export const virtual_host = '/';
 export const queue_name = 'User-Queue';
 export const rmq_host = process.env.RMQ_HOST || '127.0.0.1:5672';
+export const db_host_name = process.env.DB_HOST_NAME || 'mongodb+srv';
+export const db_user = process.env.DB_USER || 'root';
+export const db_password = process.env.DB_PASSWORD || 'root';
+export const db_cluster =
+  process.env.DB_CLUSTER || 'cluster0.rj2jb5r.mongodb.net';

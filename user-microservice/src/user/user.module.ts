@@ -52,10 +52,12 @@ import { MailerModule } from '@nestjs-modules/mailer';
     ]),
     MailerModule.forRoot({
       transport: {
-        host: 'smtp.sendgrid.net',
+        host: 'smtp.gmail.com',
+        port: 587,
+        secure: false,
         auth: {
-          user: 'apikey',
-          pass: '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',
+          user: 'ymlbeginners@gmail.com',
+          pass: 'pelwhovrqaokyojr',
         },
       },
     }),

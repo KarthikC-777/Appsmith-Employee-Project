@@ -14,14 +14,14 @@ import { UserDto } from './dto/user.dto';
 import { loginDto } from './dto/login.dto';
 import { UpdateDto } from './dto/update.dto';
 import { EmployeeDto } from './dto/employee.dto';
-import { randomBytes } from 'crypto';
+
 import { forgotDto } from './dto/forgot.dto';
 import { resetDto } from './dto/reset.dto';
 import { ClientProxy } from '@nestjs/microservices';
 import { leaveDto } from './dto/leave.dto';
 import { map } from 'rxjs';
 import { Cache } from 'cache-manager';
-import { stringify } from 'querystring';
+
 const userProjection = {
   __v: false,
   _id: false,
@@ -386,6 +386,8 @@ export class UserService {
         };
         throw new HttpException(formatError, HttpStatus.BAD_REQUEST);
       }
+      user['doesLinkValid'] = true;
+      user.save();
       return true;
     } catch (error) {
       throw new HttpException(error.response, error.status);

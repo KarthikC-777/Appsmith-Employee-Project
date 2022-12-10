@@ -34,6 +34,12 @@ services:
       USER_NAME: myuser
       PASSWORD: mypassword
       RMQ_HOST: rabbitmq3
+      DB_HOST_NAME: ${db_host_name}
+      DB_USER: ${db_user}
+      DB_PASSWORD: ${db_password}
+      DB_CLUSTER: ${db_cluster}
+      DB_NAME: ${db_name}
+
     depends_on:
       - user
       - mongo_db
@@ -51,6 +57,11 @@ services:
       USER_NAME: myuser
       PASSWORD: mypassword
       RMQ_HOST: rabbitmq3
+      DB_HOST_NAME: ${db_host_name}
+      DB_USER: ${db_user}
+      DB_PASSWORD: ${db_password}
+      DB_CLUSTER: ${db_cluster}
+      DB_NAME: ${db_name}
     depends_on:
       - mongo_db
       - rabbitmq3

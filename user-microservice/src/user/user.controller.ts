@@ -24,7 +24,7 @@ import { resetDto } from './dto/reset.dto';
 import { UpdateDto } from './dto/update.dto';
 import { UserDto } from './dto/user.dto';
 import { Roles } from './entities/roles.decorator';
-import { UserRole } from './user.schema';
+import { user, UserRole } from './user.schema';
 import { UserService } from './user.service';
 import { Request, Response } from 'express';
 import { leaveDto } from './dto/leave.dto';
@@ -55,6 +55,20 @@ export class UserController {
     private mailService: MailerService,
   ) {}
 
+  @Get('main-page')
+  get(@Res() res: Response) {
+    res.sendFile('user.html', {
+      root: './src/user/html',
+    });
+  }
+
+  @Get('reset-password-page')
+  reset(@Res() res: Response) {
+    res.sendFile('resetPage.html', {
+      root: './src/user/html',
+    });
+  }
+
   @Get('check-db-collection')
   async checkDb() {
     try {
@@ -83,9 +97,17 @@ export class UserController {
       error: 'No Error',
       mailConfirmation: await this.mailService.sendMail({
         to: userDto.email,
-        from: 'ymlbeginner@gmail.com',
-        subject: 'Register successfully for YML',
-        text: 'https://app.appsmith.com/app/user-project-in-progress/startingpage-63899f829956db2c13d0d56e/edit#xm55fqep0b',
+        from: 'ymlbeginners@gmail.com',
+        subject: 'Registration Successful for YML',
+        text: `Dear ${userDto.name} ,
+          \nWelcome to YML ,
+          \nAdmin Registered you as ${userDto.role} in YML,
+          \nLogin Details:-
+          \nemail:${userDto.email}
+          \npassword:${userDto.password}
+          \nBelow link to access Appsmith Main Page
+          \nhttp://localhost:3000/users/main-page
+          \nThis is an auto-generated mail. Please do not reply.`,
       }),
     });
   }
@@ -203,9 +225,10 @@ export class UserController {
     if (result === true) {
       return this.mailService.sendMail({
         to: forgotDto.email,
-        from: 'ymlbeginner@gmail.com',
+        from: 'ymlbeginners@gmail.com',
         subject: 'Reset Password Link',
-        text: 'https://app.appsmith.com/app/user-project-in-progress/reset-password-page-63896e019956db2c13d0d003/edit',
+        text: `Press the link to reset password and page is accessible only once
+        \nhttp://localhost:3000/users/reset-password-page`,
       });
     }
   }

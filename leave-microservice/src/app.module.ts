@@ -1,13 +1,20 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { db_host, db_name } from './config';
+import {
+  db_cluster,
+  db_host,
+  db_host_name,
+  db_name,
+  db_password,
+  db_user,
+} from './config';
 
 import { LeaveModule } from './leave/leave.module';
 
 @Module({
   imports: [
     MongooseModule.forRoot(
-      'mongodb+srv://root:root@cluster0.rj2jb5r.mongodb.net/Appsmith',
+      `${db_host_name}://${db_user}:${db_password}@${db_cluster}/${db_name}`,
     ),
     LeaveModule,
   ],
