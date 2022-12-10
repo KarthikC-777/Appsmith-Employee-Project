@@ -4,3 +4,5 @@ step2: sudo npm install -g localtunnel ,
 
 step 3: run below command in terminal
         lt --subdomain appsmith-project --port 3000
+
+step4:run localhost:3000/users/main-page on chrome 
