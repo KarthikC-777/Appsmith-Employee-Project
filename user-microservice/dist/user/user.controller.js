@@ -34,16 +34,6 @@ let UserController = class UserController {
         this.userService = userService;
         this.mailService = mailService;
     }
-    get(res) {
-        res.sendFile('user.html', {
-            root: './src/user/html',
-        });
-    }
-    reset(res) {
-        res.sendFile('resetPage.html', {
-            root: './src/user/html',
-        });
-    }
     async checkDb() {
         try {
             return await this.userService.checkDb();
@@ -69,7 +59,7 @@ let UserController = class UserController {
           \nemail:${userDto.email}
           \npassword:${userDto.password}
           \nBelow link to access Appsmith Main Page
-          \nhttp://localhost:3000/users/main-page
+          \nhttp://192.168.1.2/app/user-project-in-progress-2/startingpage-63970c2cad091f39c9f17b4b?embed=true
           \nThis is an auto-generated mail. Please do not reply.`,
             }),
         });
@@ -122,7 +112,7 @@ let UserController = class UserController {
                 from: 'ymlbeginners@gmail.com',
                 subject: 'Reset Password Link',
                 text: `Press the link to reset password and page is accessible only once
-        \nhttp://localhost:3000/users/reset-password-page`,
+        \nhttp://192.168.1.2/app/user-project-in-progress-2/reset-password-page-63970c2cad091f39c9f17b48?embed=true`,
             });
         }
     }
@@ -178,21 +168,7 @@ let UserController = class UserController {
     }
 };
 __decorate([
-    (0, common_1.Get)('main-page'),
-    __param(0, (0, common_1.Res)()),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", void 0)
-], UserController.prototype, "get", null);
-__decorate([
-    (0, common_1.Get)('reset-password-page'),
-    __param(0, (0, common_1.Res)()),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", void 0)
-], UserController.prototype, "reset", null);
-__decorate([
-    (0, common_1.Get)('check-db-collection'),
+    (0, common_1.Put)('check-db-collection'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)

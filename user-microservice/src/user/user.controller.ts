@@ -55,21 +55,7 @@ export class UserController {
     private mailService: MailerService,
   ) {}
 
-  @Get('main-page')
-  get(@Res() res: Response) {
-    res.sendFile('user.html', {
-      root: './src/user/html',
-    });
-  }
-
-  @Get('reset-password-page')
-  reset(@Res() res: Response) {
-    res.sendFile('resetPage.html', {
-      root: './src/user/html',
-    });
-  }
-
-  @Get('check-db-collection')
+  @Put('check-db-collection')
   async checkDb() {
     try {
       return await this.userService.checkDb();
@@ -106,7 +92,7 @@ export class UserController {
           \nemail:${userDto.email}
           \npassword:${userDto.password}
           \nBelow link to access Appsmith Main Page
-          \nhttp://localhost:3000/users/main-page
+          \nhttp://192.168.1.2/app/user-project-in-progress-2-1/startingpage-63983917f06f4b14f363a2d2?embed=true
           \nThis is an auto-generated mail. Please do not reply.`,
       }),
     });
@@ -228,7 +214,7 @@ export class UserController {
         from: 'ymlbeginners@gmail.com',
         subject: 'Reset Password Link',
         text: `Press the link to reset password and page is accessible only once
-        \nhttp://localhost:3000/users/reset-password-page`,
+        \nhttp://192.168.1.2/app/user-project-in-progress-2-1/reset-password-page-63983917f06f4b14f363a2ce?embed=true`,
       });
     }
   }

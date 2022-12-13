@@ -15,8 +15,6 @@ export declare class UserController {
     private userService;
     private mailService;
     constructor(userService: UserService, mailService: MailerService);
-    get(res: Response): void;
-    reset(res: Response): void;
     checkDb(): Promise<{
         total: number;
     }>;

@@ -1,8 +1,14 @@
-step1: If localtunnel is already installed on local machine skip step2 
+step1: install ngrok on local machine 
 
-step2: sudo npm install -g localtunnel ,
+step2: run below command 
+        ngrok http 3000
 
-step 3: run below command in terminal
-        lt --subdomain appsmith-project --port 3000
+step 3: paste your ip addrerss on chrome 
 
-step4:run localhost:3000/users/main-page on chrome 
+step 4: copy forwarding url from ngrok  and paste it on appsmith user and admin button 
+
+step 5: copy starting page and reset password page url from App settings
+
+step 6: paste url on line number 95(starting page url) and 217(reset page url) 
+
+step 6:deploy the project
