@@ -1,0 +1,214 @@
++ http_conf=/opt/appsmith/templates/nginx-app-http.conf.template.sh
++ https_conf=/opt/appsmith/templates/nginx-app-https.conf.template.sh
++ ssl_conf_path=/appsmith-stacks/data/certificate/conf
++ APP_TEMPLATE=/opt/appsmith/templates/nginx-app-http.conf.template.sh
++ mkdir -pv /appsmith-stacks/data/certificate/conf
++ cat
++ cat
++ [[ -z 'self' * ]]
++ export 'APPSMITH_ALLOWED_FRAME_ANCESTORS='\''self'\'' *'
++ APPSMITH_ALLOWED_FRAME_ANCESTORS=''\''self'\'' *'
++ [[ -z false ]]
++ [[ -n '' ]]
++ bash /opt/appsmith/templates/nginx-app-http.conf.template.sh ''
++ index_html_served=/opt/appsmith/editor/index.html
++ index_html_original=/opt/appsmith/index.html.original
++ [[ ! -f /opt/appsmith/index.html.original ]]
++ cp -v /opt/appsmith/editor/index.html /opt/appsmith/index.html.original
++ node -e '
+const fs = require("fs")
+const content = fs.readFileSync("/opt/appsmith/index.html.original", "utf8").replace(
+  /\b__(APPSMITH_[A-Z0-9_]+)__\b/g,
+  (placeholder, name) => (process.env[name] || "")
+)
+fs.writeFileSync("/opt/appsmith/editor/index.html", content)
+'
++ exec nginx -g 'daemon off;error_log stderr info;'
+2022/12/14 04:47:46 [notice] 1374#1374: using the "epoll" event method
+2022/12/14 04:47:46 [notice] 1374#1374: nginx/1.18.0 (Ubuntu)
+2022/12/14 04:47:46 [notice] 1374#1374: OS: Linux 5.15.49-linuxkit
+2022/12/14 04:47:46 [notice] 1374#1374: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 04:47:46 [notice] 1374#1374: start worker processes
+2022/12/14 04:47:46 [notice] 1374#1374: start worker process 1417
+2022/12/14 04:47:46 [notice] 1374#1374: start worker process 1418
+2022/12/14 04:47:46 [notice] 1374#1374: start worker process 1419
+2022/12/14 04:47:46 [notice] 1374#1374: start worker process 1420
+2022/12/14 04:47:46 [notice] 1374#1374: start worker process 1421
+2022/12/14 04:47:46 [notice] 1374#1374: start worker process 1422
+2022/12/14 04:51:30 [notice] 1374#1374: signal 3 (SIGQUIT) received from 1, shutting down
+2022/12/14 04:51:30 [notice] 1417#1417: gracefully shutting down
+2022/12/14 04:51:30 [notice] 1417#1417: exiting
+2022/12/14 04:51:30 [notice] 1422#1422: gracefully shutting down
+2022/12/14 04:51:30 [notice] 1421#1421: gracefully shutting down
+2022/12/14 04:51:30 [notice] 1421#1421: exiting
+2022/12/14 04:51:30 [notice] 1422#1422: exiting
+2022/12/14 04:51:30 [notice] 1421#1421: exit
+2022/12/14 04:51:30 [notice] 1422#1422: exit
+2022/12/14 04:51:30 [notice] 1417#1417: exit
+2022/12/14 04:51:30 [notice] 1374#1374: signal 17 (SIGCHLD) received from 1417
+2022/12/14 04:51:30 [notice] 1374#1374: worker process 1417 exited with code 0
+2022/12/14 04:51:30 [notice] 1374#1374: worker process 1421 exited with code 0
+2022/12/14 04:51:30 [notice] 1374#1374: signal 29 (SIGIO) received
+2022/12/14 04:51:30 [notice] 1374#1374: signal 17 (SIGCHLD) received from 1422
+2022/12/14 04:51:30 [notice] 1374#1374: worker process 1422 exited with code 0
+2022/12/14 04:51:30 [notice] 1374#1374: signal 29 (SIGIO) received
+2022/12/14 04:51:30 [notice] 1420#1420: gracefully shutting down
+2022/12/14 04:51:30 [notice] 1418#1418: gracefully shutting down
+2022/12/14 04:51:30 [notice] 1418#1418: exiting
+2022/12/14 04:51:30 [notice] 1419#1419: gracefully shutting down
+2022/12/14 04:51:30 [notice] 1419#1419: exiting
+2022/12/14 04:51:30 [notice] 1419#1419: exit
+2022/12/14 04:51:30 [notice] 1374#1374: signal 17 (SIGCHLD) received from 1419
+2022/12/14 04:51:30 [notice] 1374#1374: worker process 1419 exited with code 0
+2022/12/14 04:51:30 [notice] 1374#1374: signal 29 (SIGIO) received
+2022/12/14 04:51:30 [notice] 1418#1418: exit
+2022/12/14 04:51:30 [notice] 1374#1374: signal 17 (SIGCHLD) received from 1418
+2022/12/14 04:51:30 [notice] 1374#1374: worker process 1418 exited with code 0
+2022/12/14 04:51:30 [notice] 1374#1374: signal 29 (SIGIO) received
+2022/12/14 04:51:33 [notice] 1420#1420: exiting
+2022/12/14 04:51:33 [notice] 1420#1420: exit
+2022/12/14 04:51:33 [notice] 1374#1374: signal 17 (SIGCHLD) received from 1420
+2022/12/14 04:51:33 [notice] 1374#1374: worker process 1420 exited with code 0
+2022/12/14 04:51:33 [notice] 1374#1374: exit
++ http_conf=/opt/appsmith/templates/nginx-app-http.conf.template.sh
++ https_conf=/opt/appsmith/templates/nginx-app-https.conf.template.sh
++ ssl_conf_path=/appsmith-stacks/data/certificate/conf
++ APP_TEMPLATE=/opt/appsmith/templates/nginx-app-http.conf.template.sh
++ mkdir -pv /appsmith-stacks/data/certificate/conf
++ cat
++ cat
++ [[ -z 'self' * ]]
++ export 'APPSMITH_ALLOWED_FRAME_ANCESTORS='\''self'\'' *'
++ APPSMITH_ALLOWED_FRAME_ANCESTORS=''\''self'\'' *'
++ [[ -z false ]]
++ [[ -n '' ]]
++ bash /opt/appsmith/templates/nginx-app-http.conf.template.sh ''
++ index_html_served=/opt/appsmith/editor/index.html
++ index_html_original=/opt/appsmith/index.html.original
++ [[ ! -f /opt/appsmith/index.html.original ]]
++ node -e '
+const fs = require("fs")
+const content = fs.readFileSync("/opt/appsmith/index.html.original", "utf8").replace(
+  /\b__(APPSMITH_[A-Z0-9_]+)__\b/g,
+  (placeholder, name) => (process.env[name] || "")
+)
+fs.writeFileSync("/opt/appsmith/editor/index.html", content)
+'
++ exec nginx -g 'daemon off;error_log stderr info;'
+2022/12/14 04:52:35 [notice] 1373#1373: using the "epoll" event method
+2022/12/14 04:52:35 [notice] 1373#1373: nginx/1.18.0 (Ubuntu)
+2022/12/14 04:52:35 [notice] 1373#1373: OS: Linux 5.15.49-linuxkit
+2022/12/14 04:52:35 [notice] 1373#1373: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 04:52:35 [notice] 1373#1373: start worker processes
+2022/12/14 04:52:35 [notice] 1373#1373: start worker process 1415
+2022/12/14 04:52:35 [notice] 1373#1373: start worker process 1416
+2022/12/14 04:52:35 [notice] 1373#1373: start worker process 1417
+2022/12/14 04:52:35 [notice] 1373#1373: start worker process 1418
+2022/12/14 04:52:35 [notice] 1373#1373: start worker process 1419
+2022/12/14 04:52:35 [notice] 1373#1373: start worker process 1420
+2022/12/14 05:11:11 [notice] 1373#1373: signal 3 (SIGQUIT) received from 1, shutting down
+2022/12/14 05:11:11 [notice] 1415#1415: gracefully shutting down
+2022/12/14 05:11:11 [notice] 1416#1416: gracefully shutting down
+2022/12/14 05:11:11 [notice] 1419#1419: gracefully shutting down
+2022/12/14 05:11:11 [notice] 1416#1416: exiting
+2022/12/14 05:11:11 [notice] 1419#1419: exiting
+2022/12/14 05:11:11 [notice] 1418#1418: gracefully shutting down
+2022/12/14 05:11:11 [notice] 1415#1415: exiting
+2022/12/14 05:11:11 [notice] 1417#1417: gracefully shutting down
+2022/12/14 05:11:11 [notice] 1417#1417: exiting
+2022/12/14 05:11:11 [notice] 1418#1418: exiting
+2022/12/14 05:11:11 [notice] 1419#1419: exit
+2022/12/14 05:11:11 [notice] 1416#1416: exit
+2022/12/14 05:11:11 [notice] 1415#1415: exit
+2022/12/14 05:11:11 [notice] 1417#1417: exit
+2022/12/14 05:11:11 [notice] 1418#1418: exit
+2022/12/14 05:11:11 [notice] 1373#1373: signal 17 (SIGCHLD) received from 1416
+2022/12/14 05:11:11 [notice] 1373#1373: worker process 1416 exited with code 0
+2022/12/14 05:11:11 [notice] 1373#1373: worker process 1417 exited with code 0
+2022/12/14 05:11:11 [notice] 1373#1373: signal 29 (SIGIO) received
+2022/12/14 05:11:11 [notice] 1373#1373: signal 17 (SIGCHLD) received from 1418
+2022/12/14 05:11:11 [notice] 1373#1373: worker process 1418 exited with code 0
+2022/12/14 05:11:11 [notice] 1373#1373: signal 29 (SIGIO) received
+2022/12/14 05:11:11 [notice] 1420#1420: gracefully shutting down
+2022/12/14 05:11:11 [notice] 1373#1373: signal 17 (SIGCHLD) received from 1419
+2022/12/14 05:11:11 [notice] 1373#1373: worker process 1419 exited with code 0
+2022/12/14 05:11:11 [notice] 1373#1373: signal 29 (SIGIO) received
+2022/12/14 05:11:11 [notice] 1373#1373: signal 17 (SIGCHLD) received from 1415
+2022/12/14 05:11:11 [notice] 1420#1420: exiting
+2022/12/14 05:11:11 [notice] 1373#1373: worker process 1415 exited with code 0
+2022/12/14 05:11:11 [notice] 1373#1373: signal 29 (SIGIO) received
+2022/12/14 05:11:11 [notice] 1420#1420: exit
+2022/12/14 05:11:11 [notice] 1373#1373: signal 17 (SIGCHLD) received from 1420
+2022/12/14 05:11:11 [notice] 1373#1373: worker process 1420 exited with code 0
+2022/12/14 05:11:11 [notice] 1373#1373: exit
++ http_conf=/opt/appsmith/templates/nginx-app-http.conf.template.sh
++ https_conf=/opt/appsmith/templates/nginx-app-https.conf.template.sh
++ ssl_conf_path=/appsmith-stacks/data/certificate/conf
++ APP_TEMPLATE=/opt/appsmith/templates/nginx-app-http.conf.template.sh
++ mkdir -pv /appsmith-stacks/data/certificate/conf
++ cat
++ cat
++ [[ -z 'self' * ]]
++ export 'APPSMITH_ALLOWED_FRAME_ANCESTORS='\''self'\'' *'
++ APPSMITH_ALLOWED_FRAME_ANCESTORS=''\''self'\'' *'
++ [[ -z false ]]
++ [[ -n '' ]]
++ bash /opt/appsmith/templates/nginx-app-http.conf.template.sh ''
++ index_html_served=/opt/appsmith/editor/index.html
++ index_html_original=/opt/appsmith/index.html.original
++ [[ ! -f /opt/appsmith/index.html.original ]]
++ node -e '
+const fs = require("fs")
+const content = fs.readFileSync("/opt/appsmith/index.html.original", "utf8").replace(
+  /\b__(APPSMITH_[A-Z0-9_]+)__\b/g,
+  (placeholder, name) => (process.env[name] || "")
+)
+fs.writeFileSync("/opt/appsmith/editor/index.html", content)
+'
++ exec nginx -g 'daemon off;error_log stderr info;'
+2022/12/14 05:12:46 [notice] 1376#1376: using the "epoll" event method
+2022/12/14 05:12:46 [notice] 1376#1376: nginx/1.18.0 (Ubuntu)
+2022/12/14 05:12:46 [notice] 1376#1376: OS: Linux 5.15.49-linuxkit
+2022/12/14 05:12:46 [notice] 1376#1376: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 05:12:46 [notice] 1376#1376: start worker processes
+2022/12/14 05:12:46 [notice] 1376#1376: start worker process 1412
+2022/12/14 05:12:46 [notice] 1376#1376: start worker process 1414
+2022/12/14 05:12:46 [notice] 1376#1376: start worker process 1415
+2022/12/14 05:12:46 [notice] 1376#1376: start worker process 1416
+2022/12/14 05:12:46 [notice] 1376#1376: start worker process 1417
+2022/12/14 05:12:46 [notice] 1376#1376: start worker process 1418
+2022/12/14 06:24:00 [notice] 1376#1376: signal 3 (SIGQUIT) received from 1, shutting down
+2022/12/14 06:24:00 [notice] 1412#1412: gracefully shutting down
+2022/12/14 06:24:00 [notice] 1412#1412: exiting
+2022/12/14 06:24:00 [notice] 1414#1414: gracefully shutting down
+2022/12/14 06:24:00 [notice] 1414#1414: exiting
+2022/12/14 06:24:00 [notice] 1416#1416: gracefully shutting down
+2022/12/14 06:24:00 [notice] 1416#1416: exiting
+2022/12/14 06:24:00 [notice] 1416#1416: exit
+2022/12/14 06:24:00 [notice] 1412#1412: exit
+2022/12/14 06:24:00 [notice] 1414#1414: exit
+2022/12/14 06:24:00 [notice] 1415#1415: gracefully shutting down
+2022/12/14 06:24:00 [notice] 1415#1415: exiting
+2022/12/14 06:24:00 [notice] 1376#1376: signal 17 (SIGCHLD) received from 1412
+2022/12/14 06:24:00 [notice] 1376#1376: worker process 1412 exited with code 0
+2022/12/14 06:24:00 [notice] 1376#1376: worker process 1416 exited with code 0
+2022/12/14 06:24:00 [notice] 1376#1376: signal 29 (SIGIO) received
+2022/12/14 06:24:00 [notice] 1376#1376: signal 17 (SIGCHLD) received from 1416
+2022/12/14 06:24:00 [notice] 1376#1376: worker process 1414 exited with code 0
+2022/12/14 06:24:00 [notice] 1376#1376: signal 29 (SIGIO) received
+2022/12/14 06:24:00 [notice] 1415#1415: exit
+2022/12/14 06:24:00 [notice] 1376#1376: signal 17 (SIGCHLD) received from 1415
+2022/12/14 06:24:00 [notice] 1417#1417: gracefully shutting down
+2022/12/14 06:24:00 [notice] 1376#1376: worker process 1415 exited with code 0
+2022/12/14 06:24:00 [notice] 1417#1417: exiting
+2022/12/14 06:24:00 [notice] 1376#1376: signal 29 (SIGIO) received
+2022/12/14 06:24:00 [notice] 1417#1417: exit
+2022/12/14 06:24:00 [notice] 1376#1376: signal 17 (SIGCHLD) received from 1417
+2022/12/14 06:24:00 [notice] 1376#1376: worker process 1417 exited with code 0
+2022/12/14 06:24:00 [notice] 1376#1376: signal 29 (SIGIO) received
+2022/12/14 06:24:00 [notice] 1418#1418: gracefully shutting down
+2022/12/14 06:24:00 [notice] 1418#1418: exiting
+2022/12/14 06:24:00 [notice] 1418#1418: exit
+2022/12/14 06:24:00 [notice] 1376#1376: signal 17 (SIGCHLD) received from 1418
+2022/12/14 06:24:00 [notice] 1376#1376: worker process 1418 exited with code 0
+2022/12/14 06:24:00 [notice] 1376#1376: exit

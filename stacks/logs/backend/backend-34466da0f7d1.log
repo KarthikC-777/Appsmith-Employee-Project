@@ -1,0 +1,355 @@
+Load environment configuration
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/appsmith/backend/server.jar!/BOOT-INF/lib/logback-classic-1.2.11.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/appsmith/backend/server.jar!/BOOT-INF/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[2022-12-13 15:06:48,412]  - Starting ServerApplication vv1.8.12 using Java 11.0.16 on 34466da0f7d1 with PID 1368 (/opt/appsmith/backend/server.jar started by root in /opt/appsmith/backend)
+[2022-12-13 15:06:48,421]  - Running with Spring Boot v2.6.5, Spring v5.3.17
+[2022-12-13 15:06:48,422]  - No active profile set, falling back to 1 default profile: "default"
+[2022-12-13 15:06:51,192]  - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2022-12-13 15:06:51,192]  - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+[2022-12-13 15:06:51,885]  - Finished Spring Data repository scanning in 683 ms. Found 55 Reactive MongoDB repository interfaces.
+[2022-12-13 15:06:52,626]  - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2022-12-13 15:06:52,627]  - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2022-12-13 15:06:52,708]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,709]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.CollectionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,709]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PageRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,710]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.UserDataRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,710]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.TenantRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,711]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.CollectionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,711]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.UserRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,712]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ThemeRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,712]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.TenantRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,712]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PageRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,713]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ProviderRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,713]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.DatasourceRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,714]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PluginRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,714]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ActionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,715]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.AssetRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,716]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ApplicationRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,717]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.CommentThreadRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,717]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.NewActionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,718]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.InviteUserRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,719]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.NotificationRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,720]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.CommentRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,720]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ConfigRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,721]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PasswordResetTokenRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,721]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PermissionGroupRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,722]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.NewPageRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,722]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.GroupRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,722]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ApiTemplateRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,723]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ActionCollectionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,723]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.UsagePulseRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,724]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.WorkspaceRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,724]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.UserDataRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,725]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.LayoutRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,726]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.NotificationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,727]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ApplicationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,728]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PermissionGroupRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,728]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.DatasourceRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,729]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ProviderRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,730]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.GitDeployKeysRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,730]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ActionCollectionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,731]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ThemeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,732]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.AssetRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,733]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ApiTemplateRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,733]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.UsagePulseRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,734]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.CommentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,734]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PluginRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,734]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.GroupRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,735]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.NewActionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,735]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ActionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,735]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PasswordResetTokenRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,736]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.NewPageRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,736]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.CommentThreadRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,736]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.InviteUserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,737]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ConfigRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,737]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.LayoutRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,737]  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.WorkspaceRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2022-12-13 15:06:52,737]  - Finished Spring Data repository scanning in 98 ms. Found 0 Redis repository interfaces.
+[2022-12-13 15:06:53,218]  - Bean 'org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-12-13 15:06:55,640]  - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[2022-12-13 15:06:55,882]  - Opened connection [connectionId{localValue:1, serverValue:14}] to localhost:27017
+[2022-12-13 15:06:55,887]  - Opened connection [connectionId{localValue:2, serverValue:15}] to localhost:27017
+[2022-12-13 15:06:55,919]  - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=97325868, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000011, setVersion=1, topologyVersion=TopologyVersion{processId=63989503da6acd82be689522, counter=6}, lastWriteDate=Tue Dec 13 15:06:50 UTC 2022, lastUpdateTimeNanos=2420022858288}
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by retrofit2.Platform (jar:file:/opt/appsmith/backend/server.jar!/BOOT-INF/lib/retrofit-2.9.0.jar!/) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of retrofit2.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[2022-12-13 15:06:57,926]  - Enabled plugins: []
+[2022-12-13 15:06:57,928]  - Disabled plugins: []
+[2022-12-13 15:06:57,935]  - PF4J version 3.5.0 in 'deployment' mode
+[2022-12-13 15:06:58,217]  - Plugin 'postgres-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,217]  - Plugin 'saas-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,217]  - Plugin 'snowflake-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,217]  - Plugin 'elasticsearch-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,217]  - Plugin 'mssql-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,217]  - Plugin 'redshift-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,217]  - Plugin 'mongo-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,217]  - Plugin 'google-sheets-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,217]  - Plugin 'graphql-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,217]  - Plugin 'js-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,217]  - Plugin 'smtp-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,217]  - Plugin 'amazons3-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,217]  - Plugin 'mysql-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,217]  - Plugin 'dynamo-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,217]  - Plugin 'arangodb-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,217]  - Plugin 'restapi-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,218]  - Plugin 'redis-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,218]  - Plugin 'firestore-plugin@1.0-SNAPSHOT' resolved
+[2022-12-13 15:06:58,218]  - Start plugin 'postgres-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,223]  - Start plugin 'saas-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,225]  - Start plugin 'snowflake-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,234]  - Start plugin 'elasticsearch-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,236]  - Start plugin 'mssql-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,237]  - Start plugin 'redshift-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,238]  - Start plugin 'mongo-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,243]  - Start plugin 'google-sheets-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,336]  - Start plugin 'graphql-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,339]  - Start plugin 'js-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,342]  - Start plugin 'smtp-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,344]  - Start plugin 'amazons3-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,350]  - Start plugin 'mysql-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,357]  - Start plugin 'dynamo-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,362]  - Start plugin 'arangodb-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,365]  - Start plugin 'restapi-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,367]  - Start plugin 'redis-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:06:58,370]  - Start plugin 'firestore-plugin@1.0-SNAPSHOT'
+[2022-12-13 15:07:00,354]  - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[2022-12-13 15:07:00,404]  - Opened connection [connectionId{localValue:4, serverValue:16}] to localhost:27017
+[2022-12-13 15:07:00,424]  - Opened connection [connectionId{localValue:3, serverValue:17}] to localhost:27017
+[2022-12-13 15:07:00,428]  - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=40448823, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000011, setVersion=1, topologyVersion=TopologyVersion{processId=63989503da6acd82be689522, counter=6}, lastWriteDate=Tue Dec 13 15:06:50 UTC 2022, lastUpdateTimeNanos=2424565609466}
+[2022-12-13 15:07:00,593]  - Reflections took 59 ms to scan 1 urls, producing 2 keys and 6 values 
+[2022-12-13 15:07:00,801]  - Opened connection [connectionId{localValue:5, serverValue:18}] to localhost:27017
+[2022-12-13 15:07:01,252]  - Mongock trying to acquire the lock
+[2022-12-13 15:07:01,306]  - Mongock acquired the lock until: Tue Dec 13 15:10:01 UTC 2022
+[2022-12-13 15:07:01,307]  - Mongock starting the data migration sequence id[2022-12-13T15:07:01.306831-491]...
+[2022-12-13 15:07:01,311]  - PASSED OVER - ChangeEntry{, "id"="initial-plugins", "author"="", "class"="DatabaseChangelog", "method"="initialPlugins"}
+[2022-12-13 15:07:01,315]  - PASSED OVER - ChangeEntry{, "id"="remove-org-name-index", "author"="", "class"="DatabaseChangelog", "method"="removeOrgNameIndex"}
+[2022-12-13 15:07:01,318]  - PASSED OVER - ChangeEntry{, "id"="initial-indexes", "author"="", "class"="DatabaseChangelog", "method"="addInitialIndexes"}
+[2022-12-13 15:07:01,322]  - PASSED OVER - ChangeEntry{, "id"="application-deleted-at", "author"="", "class"="DatabaseChangelog", "method"="addApplicationDeletedAtFieldAndIndex"}
+[2022-12-13 15:07:01,326]  - PASSED OVER - ChangeEntry{, "id"="hide-rapidapi-plugin", "author"="", "class"="DatabaseChangelog", "method"="hideRapidApiPluginFromCreateDatasource"}
+[2022-12-13 15:07:01,330]  - PASSED OVER - ChangeEntry{, "id"="datasource-deleted-at", "author"="", "class"="DatabaseChangelog", "method"="addDatasourceDeletedAtFieldAndIndex"}
+[2022-12-13 15:07:01,333]  - PASSED OVER - ChangeEntry{, "id"="page-deleted-at", "author"="", "class"="DatabaseChangelog", "method"="addPageDeletedAtFieldAndIndex"}
+[2022-12-13 15:07:01,336]  - PASSED OVER - ChangeEntry{, "id"="friendly-plugin-names", "author"="", "class"="DatabaseChangelog", "method"="setFriendlyPluginNames"}
+[2022-12-13 15:07:01,339]  - PASSED OVER - ChangeEntry{, "id"="add-delete-datasource-perm-existing-groups", "author"="", "class"="DatabaseChangelog", "method"="addDeleteDatasourcePermToExistingGroups"}
+[2022-12-13 15:07:01,343]  - PASSED OVER - ChangeEntry{, "id"="install-default-plugins-to-all-organizations", "author"="", "class"="DatabaseChangelog", "method"="installDefaultPluginsToAllOrganizations"}
+[2022-12-13 15:07:01,346]  - PASSED OVER - ChangeEntry{, "id"="ensure-datasource-created-and-updated-at-fields", "author"="", "class"="DatabaseChangelog", "method"="ensureDatasourceCreatedAndUpdatedAt"}
+[2022-12-13 15:07:01,351]  - PASSED OVER - ChangeEntry{, "id"="add-index-for-sequence-name", "author"="", "class"="DatabaseChangelog", "method"="addIndexForSequenceName"}
+[2022-12-13 15:07:01,355]  - PASSED OVER - ChangeEntry{, "id"="set-initial-sequence-for-datasource", "author"="", "class"="DatabaseChangelog", "method"="setInitialSequenceForDatasource"}
+[2022-12-13 15:07:01,359]  - PASSED OVER - ChangeEntry{, "id"="set-plugin-image-and-docs-link", "author"="", "class"="DatabaseChangelog", "method"="setPluginImageAndDocsLink"}
+[2022-12-13 15:07:01,362]  - PASSED OVER - ChangeEntry{, "id"="fix-double-escapes", "author"="", "class"="DatabaseChangelog", "method"="fixDoubleEscapes"}
+[2022-12-13 15:07:01,366]  - PASSED OVER - ChangeEntry{, "id"="encrypt-password", "author"="", "class"="DatabaseChangelog", "method"="encryptPassword"}
+[2022-12-13 15:07:01,370]  - PASSED OVER - ChangeEntry{, "id"="install-mysql-plugins", "author"="", "class"="DatabaseChangelog", "method"="mysqlPlugin"}
+[2022-12-13 15:07:01,374]  - PASSED OVER - ChangeEntry{, "id"="update-database-documentation-links", "author"="", "class"="DatabaseChangelog", "method"="updateDatabaseDocumentationLinks"}
+[2022-12-13 15:07:01,377]  - PASSED OVER - ChangeEntry{, "id"="execute-action-for-read-action", "author"="", "class"="DatabaseChangelog", "method"="giveExecutePermissionToReadActionUsers"}
+[2022-12-13 15:07:01,382]  - PASSED OVER - ChangeEntry{, "id"="invite-and-public-permissions", "author"="", "class"="DatabaseChangelog", "method"="giveInvitePermissionToOrganizationsAndPublicPermissionsToApplications"}
+[2022-12-13 15:07:01,387]  - PASSED OVER - ChangeEntry{, "id"="generate-unique-id-for-instance", "author"="", "class"="DatabaseChangelog", "method"="generateUniqueIdForInstance"}
+[2022-12-13 15:07:01,390]  - PASSED OVER - ChangeEntry{, "id"="fix-password-reset-token-expiration", "author"="", "class"="DatabaseChangelog", "method"="fixTokenExpiration"}
+[2022-12-13 15:07:01,394]  - PASSED OVER - ChangeEntry{, "id"="add-elastic-search-plugin", "author"="", "class"="DatabaseChangelog", "method"="addElasticSearchPlugin"}
+[2022-12-13 15:07:01,398]  - PASSED OVER - ChangeEntry{, "id"="add-dynamo-plugin", "author"="", "class"="DatabaseChangelog", "method"="addDynamoPlugin"}
+[2022-12-13 15:07:01,401]  - PASSED OVER - ChangeEntry{, "id"="use-png-logos", "author"="", "class"="DatabaseChangelog", "method"="usePngLogos"}
+[2022-12-13 15:07:01,403]  - PASSED OVER - ChangeEntry{, "id"="add-redis-plugin", "author"="", "class"="DatabaseChangelog", "method"="addRedisPlugin"}
+[2022-12-13 15:07:01,406]  - PASSED OVER - ChangeEntry{, "id"="add-msSql-plugin", "author"="", "class"="DatabaseChangelog", "method"="addMsSqlPlugin"}
+[2022-12-13 15:07:01,409]  - PASSED OVER - ChangeEntry{, "id"="createNewPageIndexAfterDroppingNewPage", "author"="", "class"="DatabaseChangelog", "method"="addNewPageIndexAfterDroppingNewPage"}
+[2022-12-13 15:07:01,413]  - PASSED OVER - ChangeEntry{, "id"="createNewActionIndexAfterDroppingNewAction", "author"="", "class"="DatabaseChangelog", "method"="addNewActionIndexAfterDroppingNewAction"}
+[2022-12-13 15:07:01,417]  - PASSED OVER - ChangeEntry{, "id"="migrate-page-and-actions", "author"="", "class"="DatabaseChangelog", "method"="migratePage"}
+[2022-12-13 15:07:01,422]  - PASSED OVER - ChangeEntry{, "id"="new-page-new-action-add-indexes", "author"="", "class"="DatabaseChangelog", "method"="addNewPageAndNewActionNewIndexes"}
+[2022-12-13 15:07:01,426]  - PASSED OVER - ChangeEntry{, "id"="new-action-add-index-pageId", "author"="", "class"="DatabaseChangelog", "method"="addNewActionIndexForPageId"}
+[2022-12-13 15:07:01,429]  - PASSED OVER - ChangeEntry{, "id"="update-action-index-to-single-multiple-indices", "author"="", "class"="DatabaseChangelog", "method"="updateActionIndexToSingleMultipleIndices"}
+[2022-12-13 15:07:01,432]  - PASSED OVER - ChangeEntry{, "id"="add-firestore-plugin", "author"="", "class"="DatabaseChangelog", "method"="addFirestorePlugin"}
+[2022-12-13 15:07:01,436]  - PASSED OVER - ChangeEntry{, "id"="ensure-app-icons-and-colors", "author"="", "class"="DatabaseChangelog", "method"="ensureAppIconsAndColors"}
+[2022-12-13 15:07:01,439]  - PASSED OVER - ChangeEntry{, "id"="update-authentication-type", "author"="", "class"="DatabaseChangelog", "method"="updateAuthenticationTypes"}
+[2022-12-13 15:07:01,443]  - PASSED OVER - ChangeEntry{, "id"="add-isSendSessionEnabled-key-for-datasources", "author"="", "class"="DatabaseChangelog", "method"="addIsSendSessionEnabledPropertyInDatasources"}
+[2022-12-13 15:07:01,446]  - PASSED OVER - ChangeEntry{, "id"="add-redshift-plugin", "author"="", "class"="DatabaseChangelog", "method"="addRedshiftPlugin"}
+[2022-12-13 15:07:01,449]  - PASSED OVER - ChangeEntry{, "id"="clear-userdata-collection", "author"="", "class"="DatabaseChangelog", "method"="clearUserDataCollection"}
+[2022-12-13 15:07:01,451]  - PASSED OVER - ChangeEntry{, "id"="update-database-documentation-links-v1-2-1", "author"="", "class"="DatabaseChangelog", "method"="updateDatabaseDocumentationLinks_v1_2_1"}
+[2022-12-13 15:07:01,454]  - PASSED OVER - ChangeEntry{, "id"="add-amazons3-plugin", "author"="", "class"="DatabaseChangelog", "method"="addAmazonS3Plugin"}
+[2022-12-13 15:07:01,457]  - PASSED OVER - ChangeEntry{, "id"="add-app-viewer-invite-policy", "author"="", "class"="DatabaseChangelog", "method"="addAppViewerInvitePolicy"}
+[2022-12-13 15:07:01,462]  - PASSED OVER - ChangeEntry{, "id"="update-plugin-datasource-form-components", "author"="", "class"="DatabaseChangelog", "method"="updatePluginDatasourceFormComponents"}
+[2022-12-13 15:07:01,466]  - PASSED OVER - ChangeEntry{, "id"="update-database-encode-params-toggle", "author"="", "class"="DatabaseChangelog", "method"="updateEncodeParamsToggle"}
+[2022-12-13 15:07:01,470]  - PASSED OVER - ChangeEntry{, "id"="update-postgres-plugin-preparedStatement-config", "author"="", "class"="DatabaseChangelog", "method"="updatePostgresActionsSetPreparedStatementConfiguration"}
+[2022-12-13 15:07:01,474]  - PASSED OVER - ChangeEntry{, "id"="fix-dynamicBindingPathListForActions", "author"="", "class"="DatabaseChangelog", "method"="fixDynamicBindingPathListForExistingActions"}
+[2022-12-13 15:07:01,477]  - PASSED OVER - ChangeEntry{, "id"="update-database-action-configuration-timeout", "author"="", "class"="DatabaseChangelog", "method"="updateActionConfigurationTimeout"}
+[2022-12-13 15:07:01,481]  - PASSED OVER - ChangeEntry{, "id"="update-s3-datasource-configuration-and-label", "author"="", "class"="DatabaseChangelog", "method"="updateS3DatasourceConfigurationAndLabel"}
+[2022-12-13 15:07:01,484]  - PASSED OVER - ChangeEntry{, "id"="change-applayout-type-definition", "author"="", "class"="DatabaseChangelog", "method"="changeAppLayoutTypeDefinition"}
+[2022-12-13 15:07:01,489]  - PASSED OVER - ChangeEntry{, "id"="update-mysql-postgres-mongo-ssl-mode", "author"="", "class"="DatabaseChangelog", "method"="updateMysqlPostgresMongoSslMode"}
+[2022-12-13 15:07:01,491]  - PASSED OVER - ChangeEntry{, "id"="add-commenting-permissions", "author"="", "class"="DatabaseChangelog", "method"="addCommentingPermissions"}
+[2022-12-13 15:07:01,497]  - PASSED OVER - ChangeEntry{, "id"="add-google-sheets-plugin", "author"="", "class"="DatabaseChangelog", "method"="addGoogleSheetsPlugin"}
+[2022-12-13 15:07:01,500]  - PASSED OVER - ChangeEntry{, "id"="mark-instance-unregistered", "author"="", "class"="DatabaseChangelog", "method"="markInstanceAsUnregistered"}
+[2022-12-13 15:07:01,503]  - PASSED OVER - ChangeEntry{, "id"="create-entry-in-sequence-per-organization-for-datasource", "author"="", "class"="DatabaseChangelog", "method"="createEntryInSequencePerOrganizationForDatasource"}
+[2022-12-13 15:07:01,506]  - PASSED OVER - ChangeEntry{, "id"="migrate-smartSubstitution-dataType", "author"="", "class"="DatabaseChangelog", "method"="migrateSmartSubstitutionDataTypeBoolean"}
+[2022-12-13 15:07:01,508]  - PASSED OVER - ChangeEntry{, "id"="update-mongo-import-from-srv-field", "author"="", "class"="DatabaseChangelog", "method"="updateMongoImportFromSrvField"}
+[2022-12-13 15:07:01,512]  - PASSED OVER - ChangeEntry{, "id"="delete-mongo-datasource-structures", "author"="", "class"="DatabaseChangelog", "method"="deleteMongoDatasourceStructures"}
+[2022-12-13 15:07:01,515]  - PASSED OVER - ChangeEntry{, "id"="set-mongo-actions-type-to-raw", "author"="", "class"="DatabaseChangelog", "method"="setMongoActionInputToRaw"}
+[2022-12-13 15:07:01,518]  - PASSED OVER - ChangeEntry{, "id"="update-firestore-where-conditions-data", "author"="", "class"="DatabaseChangelog", "method"="updateFirestoreWhereConditionsData"}
+[2022-12-13 15:07:01,520]  - PASSED OVER - ChangeEntry{, "id"="add-application-export-permissions", "author"="", "class"="DatabaseChangelog", "method"="addApplicationExportPermissions"}
+[2022-12-13 15:07:01,523]  - PASSED OVER - ChangeEntry{, "id"="add-snowflake-plugin", "author"="", "class"="DatabaseChangelog", "method"="addSnowflakePlugin"}
+[2022-12-13 15:07:01,526]  - PASSED OVER - ChangeEntry{, "id"="mongo-form-merge-update-commands", "author"="", "class"="DatabaseChangelog", "method"="migrateUpdateOneToUpdateManyMongoFormCommand"}
+[2022-12-13 15:07:01,529]  - PASSED OVER - ChangeEntry{, "id"="ensure-user-created-and-updated-at-fields", "author"="", "class"="DatabaseChangelog", "method"="ensureUserCreatedAndUpdatedAt"}
+[2022-12-13 15:07:01,532]  - PASSED OVER - ChangeEntry{, "id"="add-and-update-order-for-all-pages", "author"="", "class"="DatabaseChangelog", "method"="addOrderToAllPagesOfApplication"}
+[2022-12-13 15:07:01,535]  - PASSED OVER - ChangeEntry{, "id"="mongo-form-migrate-raw", "author"="", "class"="DatabaseChangelog", "method"="migrateRawInputTypeToRawCommand"}
+[2022-12-13 15:07:01,538]  - PASSED OVER - ChangeEntry{, "id"="add-arangodb-plugin", "author"="", "class"="DatabaseChangelog", "method"="addArangoDBPlugin"}
+[2022-12-13 15:07:01,541]  - PASSED OVER - ChangeEntry{, "id"="set-svg-logo-to-plugins", "author"="", "class"="DatabaseChangelog", "method"="setSvgLogoToPluginIcons"}
+[2022-12-13 15:07:01,543]  - PASSED OVER - ChangeEntry{, "id"="remove-order-field-from-application- pages", "author"="", "class"="DatabaseChangelog", "method"="removePageOrderFieldFromApplicationPages"}
+[2022-12-13 15:07:01,547]  - PASSED OVER - ChangeEntry{, "id"="create-plugin-reference-for-genarate-CRUD-page", "author"="", "class"="DatabaseChangelog", "method"="createPluginReferenceForGenerateCRUDPage"}
+[2022-12-13 15:07:01,550]  - PASSED OVER - ChangeEntry{, "id"="encrypt-certificate", "author"="", "class"="DatabaseChangelog", "method"="encryptCertificateAndPassword"}
+[2022-12-13 15:07:01,553]  - PASSED OVER - ChangeEntry{, "id"="create-plugin-reference-for-S3-GSheet-genarate-CRUD-page", "author"="", "class"="DatabaseChangelog", "method"="createPluginReferenceForS3AndGSheetGenerateCRUDPage"}
+[2022-12-13 15:07:01,556]  - PASSED OVER - ChangeEntry{, "id"="application-git-metadata", "author"="", "class"="DatabaseChangelog", "method"="addApplicationGitMetadataFieldAndIndex"}
+[2022-12-13 15:07:01,559]  - PASSED OVER - ChangeEntry{, "id"="add-js-plugin", "author"="", "class"="DatabaseChangelog", "method"="addJSPlugin"}
+[2022-12-13 15:07:01,563]  - PASSED OVER - ChangeEntry{, "id"="update-google-sheet-plugin-smartSubstitution-config", "author"="", "class"="DatabaseChangelog", "method"="updateGoogleSheetActionsSetSmartSubstitutionConfiguration"}
+[2022-12-13 15:07:01,567]  - PASSED OVER - ChangeEntry{, "id"="uninstall-mongo-uqi-plugin", "author"="", "class"="DatabaseChangelog", "method"="uninstallMongoUqiPluginAndRemoveAllActions"}
+[2022-12-13 15:07:01,570]  - PASSED OVER - ChangeEntry{, "id"="migrate-mongo-to-uqi", "author"="", "class"="DatabaseChangelog", "method"="migrateMongoPluginToUqi"}
+[2022-12-13 15:07:01,574]  - PASSED OVER - ChangeEntry{, "id"="migrate-mongo-uqi-dynamicBindingPathList", "author"="", "class"="DatabaseChangelog", "method"="migrateMongoPluginDynamicBindingListUqi"}
+[2022-12-13 15:07:01,577]  - PASSED OVER - ChangeEntry{, "id"="update-plugin-package-name-index", "author"="", "class"="DatabaseChangelog", "method"="updatePluginPackageNameIndexToPluginNamePackageNameAndVersion"}
+[2022-12-13 15:07:01,581]  - PASSED OVER - ChangeEntry{, "id"="delete-orphan-actions", "author"="", "class"="DatabaseChangelog", "method"="deleteOrphanActions"}
+[2022-12-13 15:07:01,584]  - PASSED OVER - ChangeEntry{, "id"="migrate-old-app-color-to-new-colors", "author"="", "class"="DatabaseChangelog", "method"="migrateOldAppColorsToNewColors"}
+[2022-12-13 15:07:01,589]  - PASSED OVER - ChangeEntry{, "id"="update-s3-permanent-url-toggle-default-value", "author"="", "class"="DatabaseChangelog", "method"="updateS3PermanentUrlToggleDefaultValue"}
+[2022-12-13 15:07:01,601]  - PASSED OVER - ChangeEntry{, "id"="application-git-metadata-index", "author"="", "class"="DatabaseChangelog", "method"="updateGitApplicationMetadataIndex"}
+[2022-12-13 15:07:01,618]  - PASSED OVER - ChangeEntry{, "id"="migrate-s3-to-uqi", "author"="", "class"="DatabaseChangelog", "method"="migrateS3PluginToUqi"}
+[2022-12-13 15:07:01,642]  - PASSED OVER - ChangeEntry{, "id"="set-slug-to-application-and-page", "author"="", "class"="DatabaseChangelog", "method"="setSlugToApplicationAndPage"}
+[2022-12-13 15:07:01,652]  - PASSED OVER - ChangeEntry{, "id"="update-list-widget-trigger-paths", "author"="", "class"="DatabaseChangelog", "method"="removeUnusedTriggerPathsListWidget"}
+[2022-12-13 15:07:01,655]  - PASSED OVER - ChangeEntry{, "id"="update-s3-action-configuration-for-type", "author"="", "class"="DatabaseChangelog", "method"="updateS3ActionConfigurationBodyForContentTypeSupport"}
+[2022-12-13 15:07:01,661]  - PASSED OVER - ChangeEntry{, "id"="fix-ispublic-is-false-for-public-apps", "author"="", "class"="DatabaseChangelog", "method"="fixIsPublicIsSetFalseWhenAppIsPublic"}
+[2022-12-13 15:07:01,667]  - PASSED OVER - ChangeEntry{, "id"="update-js-action-client-side-execution", "author"="", "class"="DatabaseChangelog", "method"="updateJsActionsClientSideExecution"}
+[2022-12-13 15:07:01,671]  - PASSED OVER - ChangeEntry{, "id"="add-smtp-plugin", "author"="", "class"="DatabaseChangelog", "method"="addSmtpPluginPlugin"}
+[2022-12-13 15:07:01,675]  - PASSED OVER - ChangeEntry{, "id"="update-mockdb-endpoint", "author"="", "class"="DatabaseChangelog", "method"="updateMockdbEndpoint"}
+[2022-12-13 15:07:01,678]  - PASSED OVER - ChangeEntry{, "id"="add-google-sheets-plugin-name", "author"="", "class"="DatabaseChangelog", "method"="addPluginNameForGoogleSheets"}
+[2022-12-13 15:07:01,682]  - PASSED OVER - ChangeEntry{, "id"="insert-default-resources", "author"="", "class"="DatabaseChangelog", "method"="insertDefaultResources"}
+[2022-12-13 15:07:01,686]  - PASSED OVER - ChangeEntry{, "id"="flush-spring-redis-keys", "author"="", "class"="DatabaseChangelog", "method"="clearRedisCache"}
+[2022-12-13 15:07:01,691]  - PASSED OVER - ChangeEntry{, "id"="migrate-firestore-to-uqi", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePluginToUqi"}
+[2022-12-13 15:07:01,695]  - PASSED OVER - ChangeEntry{, "id"="migrate-firestore-to-uqi-2", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePluginToUqi2"}
+[2022-12-13 15:07:01,698]  - PASSED OVER - ChangeEntry{, "id"="migrate-firestore-pagination-data", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePaginationData"}
+[2022-12-13 15:07:01,700]  - PASSED OVER - ChangeEntry{, "id"="update-mongodb-mockdb-endpoint", "author"="", "class"="DatabaseChangelog", "method"="updateMongoMockdbEndpoint"}
+[2022-12-13 15:07:01,703]  - PASSED OVER - ChangeEntry{, "id"="migrate-firestore-to-uqi-3", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePluginToUqi3"}
+[2022-12-13 15:07:01,705]  - PASSED OVER - ChangeEntry{, "id"="create-system-themes", "author"="", "class"="DatabaseChangelog", "method"="createSystemThemes"}
+[2022-12-13 15:07:01,708]  - PASSED OVER - ChangeEntry{, "id"="add-limit-field-data-to-mongo-aggregate-cmd", "author"="", "class"="DatabaseChangelog", "method"="addLimitFieldDataToMongoAggregateCommand"}
+[2022-12-13 15:07:01,710]  - PASSED OVER - ChangeEntry{, "id"="update-index-for-git", "author"="", "class"="DatabaseChangelog", "method"="updateGitIndexes"}
+[2022-12-13 15:07:01,713]  - PASSED OVER - ChangeEntry{, "id"="update-mockdb-endpoint-2", "author"="", "class"="DatabaseChangelog", "method"="updateMockdbEndpoint2"}
+[2022-12-13 15:07:01,715]  - PASSED OVER - ChangeEntry{, "id"="migrate-from-RSA-SHA1-to-ECDSA-SHA2-protocol-for-key-generation", "author"="", "class"="DatabaseChangelog", "method"="migrateFromRSASha1ToECDSASha2Protocol"}
+[2022-12-13 15:07:01,718]  - PASSED OVER - ChangeEntry{, "id"="use-assets-cdn-for-plugin-icons", "author"="", "class"="DatabaseChangelog", "method"="useAssetsCDNForPluginIcons"}
+[2022-12-13 15:07:01,720]  - PASSED OVER - ChangeEntry{, "id"="update-index-for-newAction-actionCollection-userData", "author"="", "class"="DatabaseChangelog", "method"="updateNewActionActionCollectionAndUserDataIndexes"}
+[2022-12-13 15:07:01,723]  - PASSED OVER - ChangeEntry{, "id"="mark-mssql-crud-unavailable", "author"="", "class"="DatabaseChangelog", "method"="markMSSQLCrudUnavailable"}
+[2022-12-13 15:07:01,725]  - PASSED OVER - ChangeEntry{, "id"="update-index-for-newAction-actionCollection", "author"="", "class"="DatabaseChangelog", "method"="updateNewActionActionCollectionIndexes"}
+[2022-12-13 15:07:01,728]  - PASSED OVER - ChangeEntry{, "id"="create-system-themes-v2", "author"="", "class"="DatabaseChangelog", "method"="createSystemThemes2"}
+[2022-12-13 15:07:01,730]  - PASSED OVER - ChangeEntry{, "id"="set-firestore-smart-substitution-to-false-for-old-cmds", "author"="", "class"="DatabaseChangelog", "method"="setFirestoreSmartSubstitutionToFalseForOldCommands"}
+[2022-12-13 15:07:01,732]  - PASSED OVER - ChangeEntry{, "id"="fix-plugin-title-casing", "author"="", "class"="DatabaseChangelog2", "method"="fixPluginTitleCasing"}
+[2022-12-13 15:07:01,735]  - PASSED OVER - ChangeEntry{, "id"="deprecate-archivedAt-in-action", "author"="", "class"="DatabaseChangelog2", "method"="deprecateArchivedAtForNewAction"}
+[2022-12-13 15:07:01,737]  - PASSED OVER - ChangeEntry{, "id"="update-form-data-for-uqi-mode", "author"="", "class"="DatabaseChangelog2", "method"="updateActionFormDataPath"}
+[2022-12-13 15:07:01,739]  - PASSED OVER - ChangeEntry{, "id"="add-isConfigured-flag-for-all-datasources", "author"="", "class"="DatabaseChangelog2", "method"="updateIsConfiguredFlagForAllTheExistingDatasources"}
+[2022-12-13 15:07:01,742]  - PASSED OVER - ChangeEntry{, "id"="set-application-version", "author"="", "class"="DatabaseChangelog2", "method"="setDefaultApplicationVersion"}
+[2022-12-13 15:07:01,744]  - PASSED OVER - ChangeEntry{, "id"="delete-orphan-pages", "author"="", "class"="DatabaseChangelog2", "method"="deleteOrphanPages"}
+[2022-12-13 15:07:01,748]  - PASSED OVER - ChangeEntry{, "id"="update-git-indexes", "author"="", "class"="DatabaseChangelog2", "method"="addIndexesForGit"}
+[2022-12-13 15:07:01,752]  - PASSED OVER - ChangeEntry{, "id"="update-organization-slugs", "author"="", "class"="DatabaseChangelog2", "method"="updateOrganizationSlugs"}
+[2022-12-13 15:07:01,755]  - PASSED OVER - ChangeEntry{, "id"="copy-organization-to-workspaces", "author"="", "class"="DatabaseChangelog2", "method"="copyOrganizationToWorkspaces"}
+[2022-12-13 15:07:01,758]  - PASSED OVER - ChangeEntry{, "id"="add-workspace-indexes", "author"="", "class"="DatabaseChangelog2", "method"="addWorkspaceIndexes"}
+[2022-12-13 15:07:01,760]  - PASSED OVER - ChangeEntry{, "id"="update-sequence-names-from-organization-to-workspace", "author"="", "class"="DatabaseChangelog2", "method"="updateSequenceNamesFromOrganizationToWorkspace"}
+[2022-12-13 15:07:01,763]  - PASSED OVER - ChangeEntry{, "id"="add-default-tenant", "author"="", "class"="DatabaseChangelog2", "method"="addDefaultTenant"}
+[2022-12-13 15:07:01,766]  - PASSED OVER - ChangeEntry{, "id"="add-tenant-to-all-workspaces", "author"="", "class"="DatabaseChangelog2", "method"="addTenantToWorkspaces"}
+[2022-12-13 15:07:01,769]  - PASSED OVER - ChangeEntry{, "id"="add-tenant-to-all-users-and-flush-redis", "author"="", "class"="DatabaseChangelog2", "method"="addTenantToUsersAndFlushRedis"}
+[2022-12-13 15:07:01,771]  - PASSED OVER - ChangeEntry{, "id"="migrate-organizationId-to-workspaceId-in-domain-objects", "author"="", "class"="DatabaseChangelog2", "method"="migrateOrganizationIdToWorkspaceIdInDomainObjects"}
+[2022-12-13 15:07:01,773]  - PASSED OVER - ChangeEntry{, "id"="organization-to-workspace-indexes-recreate", "author"="", "class"="DatabaseChangelog2", "method"="organizationToWorkspaceIndexesRecreate"}
+[2022-12-13 15:07:01,776]  - PASSED OVER - ChangeEntry{, "id"="migrate-permission-in-user", "author"="", "class"="DatabaseChangelog2", "method"="migratePermissionsInUser"}
+[2022-12-13 15:07:01,778]  - PASSED OVER - ChangeEntry{, "id"="migrate-permission-in-workspace", "author"="", "class"="DatabaseChangelog2", "method"="migratePermissionsInWorkspace"}
+[2022-12-13 15:07:01,781]  - PASSED OVER - ChangeEntry{, "id"="migrate-organizationId-to-workspaceId-in-newaction-datasource", "author"="", "class"="DatabaseChangelog2", "method"="migrateOrganizationIdToWorkspaceIdInNewActionDatasource"}
+[2022-12-13 15:07:01,783]  - PASSED OVER - ChangeEntry{, "id"="migrate-google-sheets-to-uqi", "author"="", "class"="DatabaseChangelog2", "method"="migrateGoogleSheetsToUqi"}
+[2022-12-13 15:07:01,786]  - PASSED OVER - ChangeEntry{, "id"="flush-spring-redis-keys-2a", "author"="", "class"="DatabaseChangelog2", "method"="clearRedisCache2"}
+[2022-12-13 15:07:01,788]  - PASSED OVER - ChangeEntry{, "id"="fix-deleted-themes-when-git-branch-deleted", "author"="", "class"="DatabaseChangelog2", "method"="fixDeletedThemesWhenGitBranchDeleted"}
+[2022-12-13 15:07:01,790]  - PASSED OVER - ChangeEntry{, "id"="add-anonymousUser", "author"="", "class"="DatabaseChangelog2", "method"="addAnonymousUser"}
+[2022-12-13 15:07:01,793]  - PASSED OVER - ChangeEntry{, "id"="add-default-permission-groups", "author"="", "class"="DatabaseChangelog2", "method"="addDefaultPermissionGroups"}
+[2022-12-13 15:07:01,795]  - PASSED OVER - ChangeEntry{, "id"="mark-public-apps", "author"="", "class"="DatabaseChangelog2", "method"="markPublicApps"}
+[2022-12-13 15:07:01,797]  - PASSED OVER - ChangeEntry{, "id"="mark-workspaces-for-inheritance", "author"="", "class"="DatabaseChangelog2", "method"="markWorkspacesForInheritance"}
+[2022-12-13 15:07:01,799]  - PASSED OVER - ChangeEntry{, "id"="inherit-policies-to-every-child-object", "author"="", "class"="DatabaseChangelog2", "method"="inheritPoliciesToEveryChildObject"}
+[2022-12-13 15:07:01,802]  - PASSED OVER - ChangeEntry{, "id"="make-applications-public", "author"="", "class"="DatabaseChangelog2", "method"="makeApplicationsPublic"}
+[2022-12-13 15:07:01,804]  - PASSED OVER - ChangeEntry{, "id"="add-instance-config-object", "author"="", "class"="DatabaseChangelog2", "method"="addInstanceConfigurationPlaceHolder"}
+[2022-12-13 15:07:01,806]  - PASSED OVER - ChangeEntry{, "id"="add-anonymous-user-permission-group", "author"="", "class"="DatabaseChangelog2", "method"="addAnonymousUserPermissionGroup"}
+[2022-12-13 15:07:01,811]  - method[createSystemThemes3] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+[2022-12-13 15:07:02,394]  - RE-APPLIED - ChangeEntry{, "id"="create-system-themes-v3", "author"="", "class"="DatabaseChangelog2", "method"="createSystemThemes3"}
+[2022-12-13 15:07:02,397]  - PASSED OVER - ChangeEntry{, "id"="update-bad-theme-state", "author"="", "class"="DatabaseChangelog2", "method"="updateBadThemeState"}
+[2022-12-13 15:07:02,399]  - PASSED OVER - ChangeEntry{, "id"="migrate-public-apps-single-pg", "author"="", "class"="DatabaseChangelog2", "method"="migratePublicAppsSinglePg"}
+[2022-12-13 15:07:02,403]  - PASSED OVER - ChangeEntry{, "id"="add-tenant-admin-permissions-instance-admin", "author"="", "class"="DatabaseChangelog2", "method"="addTenantAdminPermissionsToInstanceAdmin"}
+[2022-12-13 15:07:02,405]  - PASSED OVER - ChangeEntry{, "id"="add-graphql-plugin", "author"="", "class"="DatabaseChangelog2", "method"="addGraphQLPlugin"}
+[2022-12-13 15:07:02,408]  - PASSED OVER - ChangeEntry{, "id"="install-graphql-plugin-to-remaining-workspaces", "author"="", "class"="DatabaseChangelog2", "method"="reInstallGraphQLPluginToWorkspaces"}
+[2022-12-13 15:07:02,410]  - PASSED OVER - ChangeEntry{, "id"="indices-recommended-by-mongodb-cloud", "author"="", "class"="DatabaseChangelog2", "method"="addIndicesRecommendedByMongoCloud"}
+[2022-12-13 15:07:02,413]  - PASSED OVER - ChangeEntry{, "id"="delete-rapid-api-plugin-related-items", "author"="", "class"="DatabaseChangelog2", "method"="deleteRapidApiPluginRelatedItems"}
+[2022-12-13 15:07:02,415]  - PASSED OVER - ChangeEntry{, "id"="change-readPermissionGroup-to-readPermissionGroupMembers", "author"="", "class"="DatabaseChangelog2", "method"="modifyReadPermissionGroupToReadPermissionGroupMembers"}
+[2022-12-13 15:07:02,418]  - PASSED OVER - ChangeEntry{, "id"="delete-permissions-in-permissionGroups", "author"="", "class"="DatabaseChangelog2", "method"="deletePermissionsInPermissionGroups"}
+[2022-12-13 15:07:02,423]  - method[updateSuperUsers] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate, com.sun.proxy.$Proxy220]
+[2022-12-13 15:07:02,565]  - RE-APPLIED - ChangeEntry{, "id"="update-super-users", "author"="", "class"="DatabaseChangelog2", "method"="updateSuperUsers"}
+[2022-12-13 15:07:02,569]  - PASSED OVER - ChangeEntry{, "id"="create-indices-on-permissions-for-performance", "author"="", "class"="DatabaseChangelog2", "method"="addPermissionGroupIndex"}
+[2022-12-13 15:07:02,569]  - Mongock releasing the lock
+[2022-12-13 15:07:02,576]  - Mongock released the lock
+[2022-12-13 15:07:02,576]  - Mongock has finished
+[2022-12-13 15:07:03,484]  - Exposing 1 endpoint(s) beneath base path '/actuator'
+[2022-12-13 15:07:04,021]  - Netty started on port 8080
+[2022-12-13 15:07:04,047]  - Started ServerApplication in 18.655 seconds (JVM running for 20.732)
+[2022-12-13 15:07:04,069]  - Triggering registration of this instance...
+[2022-12-13 15:07:04,071]  - Performing RTS health check of this instance...
+[2022-12-13 15:07:04,194]  - Opened connection [connectionId{localValue:6, serverValue:26}] to localhost:27017
+[2022-12-13 15:07:04,391]  - RTS health check succeeded
+
+ █████╗ ██████╗ ██████╗ ███████╗███╗   ███╗██╗████████╗██╗  ██╗    ██╗███████╗    ██████╗ ██╗   ██╗███╗   ██╗███╗   ██╗██╗███╗   ██╗ ██████╗ ██╗
+██╔══██╗██╔══██╗██╔══██╗██╔════╝████╗ ████║██║╚══██╔══╝██║  ██║    ██║██╔════╝    ██╔══██╗██║   ██║████╗  ██║████╗  ██║██║████╗  ██║██╔════╝ ██║
+███████║██████╔╝██████╔╝███████╗██╔████╔██║██║   ██║   ███████║    ██║███████╗    ██████╔╝██║   ██║██╔██╗ ██║██╔██╗ ██║██║██╔██╗ ██║██║  ███╗██║
+██╔══██║██╔═══╝ ██╔═══╝ ╚════██║██║╚██╔╝██║██║   ██║   ██╔══██║    ██║╚════██║    ██╔══██╗██║   ██║██║╚██╗██║██║╚██╗██║██║██║╚██╗██║██║   ██║╚═╝
+██║  ██║██║     ██║     ███████║██║ ╚═╝ ██║██║   ██║   ██║  ██║    ██║███████║    ██║  ██║╚██████╔╝██║ ╚████║██║ ╚████║██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝     ╚═╝╚═╝   ╚═╝   ╚═╝  ╚═╝    ╚═╝╚══════╝    ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+
+Please open http://localhost:<port> in your browser to experience Appsmith!
+
+[2022-12-13 15:07:34,102]  - Opened connection [connectionId{localValue:7, serverValue:27}] to localhost:27017
+[2022-12-13 15:07:36,201]  - Opened connection [connectionId{localValue:8, serverValue:28}] to localhost:27017
+[2022-12-13 15:07:36,203]  - Opened connection [connectionId{localValue:9, serverValue:29}] to localhost:27017
+[2022-12-13 15:09:03,109]  - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.util.concurrent.CancellationException: Disconnected
+Caused by: java.util.concurrent.CancellationException: Disconnected
+	at reactor.core.publisher.FluxPublish$PublishSubscriber.disconnectAction(FluxPublish.java:314)
+	at reactor.core.publisher.FluxPublish$PublishSubscriber.dispose(FluxPublish.java:305)
+	at org.springframework.data.redis.connection.lettuce.LettuceReactiveSubscription$State.terminate(LettuceReactiveSubscription.java:303)
+	at org.springframework.data.redis.connection.lettuce.LettuceReactiveSubscription.lambda$cancel$8(LettuceReactiveSubscription.java:187)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:240)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:203)
+	at com.appsmith.server.configurations.MDCConfig$MdcContextLifter.onComplete(MDCConfig.java:63)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:209)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:238)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:203)
+	at com.appsmith.server.configurations.MDCConfig$MdcContextLifter.onComplete(MDCConfig.java:63)
+	at com.appsmith.server.configurations.MDCConfig$MdcContextLifter.onComplete(MDCConfig.java:63)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onComplete(Operators.java:2058)
+	at com.appsmith.server.configurations.MDCConfig$MdcContextLifter.onComplete(MDCConfig.java:63)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+	at com.appsmith.server.configurations.MDCConfig$MdcContextLifter.onComplete(MDCConfig.java:63)
+	at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+	at com.appsmith.server.configurations.MDCConfig$MdcContextLifter.onComplete(MDCConfig.java:63)
+	at io.lettuce.core.RedisPublisher$ImmediateSubscriber.onComplete(RedisPublisher.java:896)
+	at io.lettuce.core.RedisPublisher$State.onAllDataRead(RedisPublisher.java:698)
+	at io.lettuce.core.RedisPublisher$State$3.read(RedisPublisher.java:608)
+	at io.lettuce.core.RedisPublisher$State$3.onDataAvailable(RedisPublisher.java:565)
+	at io.lettuce.core.RedisPublisher$RedisSubscription.onDataAvailable(RedisPublisher.java:326)
+	at io.lettuce.core.RedisPublisher$RedisSubscription.onAllDataRead(RedisPublisher.java:341)
+	at io.lettuce.core.RedisPublisher$SubscriptionCommand.doOnComplete(RedisPublisher.java:778)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:65)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:63)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:746)
+	at io.lettuce.core.pubsub.PubSubCommandHandler.complete(PubSubCommandHandler.java:167)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:681)
+	at io.lettuce.core.pubsub.PubSubCommandHandler.decode(PubSubCommandHandler.java:112)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:598)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:800)
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:480)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:378)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)

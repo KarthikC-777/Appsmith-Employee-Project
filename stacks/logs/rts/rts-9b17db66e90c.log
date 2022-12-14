@@ -1,0 +1,39 @@
+Load environment configuration
+(node:1371) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+RTS version v1.8.12 running at http://localhost:8091
+Watching MongoDB
+GET / 302 33 - 8.444 ms
+GET /rts-api/v1/health-check 200 16 - 3.198 ms
+GET / 302 33 - 1.157 ms
+GET / 302 33 - 0.511 ms
+GET / 302 33 - 0.436 ms
+GET / 302 33 - 0.455 ms
+GET / 302 33 - 1.174 ms
+GET / 302 33 - 0.580 ms
+GET / 302 33 - 0.574 ms
+GET / 302 33 - 0.484 ms
+GET / 302 33 - 0.503 ms
+GET / 302 33 - 0.398 ms
+GET / 302 33 - 0.531 ms
+GET / 302 33 - 0.526 ms
+GET / 302 33 - 0.399 ms
+GET / 302 33 - 0.395 ms
+GET / 302 33 - 0.515 ms
+GET / 302 33 - 0.405 ms
+GET / 302 33 - 0.422 ms
+GET / 302 33 - 0.461 ms
+GET / 302 33 - 0.984 ms
+GET / 302 33 - 0.473 ms
+GET / 302 33 - 0.533 ms
+GET / 302 33 - 0.493 ms
+GET / 302 33 - 0.437 ms
+GET / 302 33 - 0.630 ms
+GET / 302 33 - 0.405 ms
+GET / 302 33 - 0.372 ms
+GET / 302 33 - 0.439 ms
+GET / 302 33 - 0.424 ms
+GET / 302 33 - 2.193 ms
+GET / 302 33 - 0.537 ms
+GET / 302 33 - 0.625 ms
+GET / 302 33 - 0.610 ms

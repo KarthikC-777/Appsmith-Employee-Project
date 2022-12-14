@@ -237,7 +237,6 @@ export class UserService {
       await this.cacheManager.set('cached_item', Math.random());
       const cachedItem = await this.cacheManager.get('cached_item');
       console.log(cachedItem);
-      await this.functionVerify(req.cookies['userlogoutcookie']);
       if (user) {
         return this.userModel.findOne({ userId: user }, userProjection).exec();
       }

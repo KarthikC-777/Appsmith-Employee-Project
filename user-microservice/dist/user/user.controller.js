@@ -59,7 +59,7 @@ let UserController = class UserController {
           \nemail:${userDto.email}
           \npassword:${userDto.password}
           \nBelow link to access Appsmith Main Page
-          \nhttp://192.168.1.2/app/user-project-in-progress-2/startingpage-63970c2cad091f39c9f17b4b?embed=true
+          \nhttps://app.appsmith.com/app/user-project-latest/startingpage-6398983f038c74195c0ab479?embed=true
           \nThis is an auto-generated mail. Please do not reply.`,
             }),
         });
@@ -76,7 +76,6 @@ let UserController = class UserController {
         return this.userService.signout(req, res);
     }
     async getEmployee(req, { userId, limit, skip }) {
-        console.log('controller', req.myData);
         const result = await this.userService.getEmployee(req, userId, limit, skip);
         if (!result) {
             throw new common_1.NotFoundException(`results not found`);
@@ -112,7 +111,7 @@ let UserController = class UserController {
                 from: 'ymlbeginners@gmail.com',
                 subject: 'Reset Password Link',
                 text: `Press the link to reset password and page is accessible only once
-        \nhttp://192.168.1.2/app/user-project-in-progress-2/reset-password-page-63970c2cad091f39c9f17b48?embed=true`,
+        \nhttps://app.appsmith.com/app/user-project-latest/reset-password-page-6398983f038c74195c0ab475?embed=true`,
             });
         }
     }

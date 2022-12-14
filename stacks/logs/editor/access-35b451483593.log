@@ -1,0 +1,6 @@
+Load environment configuration
+'/opt/appsmith/editor/index.html' -> '/opt/appsmith/index.html.original'
+127.0.0.1 - - [13/Dec/2022:15:01:08 +0000] "GET / HTTP/1.1" 200 4652 "-" "curl/7.68.0"
+127.0.0.1 - - [13/Dec/2022:15:01:23 +0000] "GET / HTTP/1.1" 200 4652 "-" "curl/7.68.0"
+127.0.0.1 - - [13/Dec/2022:15:01:39 +0000] "GET / HTTP/1.1" 200 4652 "-" "curl/7.68.0"
+127.0.0.1 - - [13/Dec/2022:15:01:54 +0000] "GET / HTTP/1.1" 200 4652 "-" "curl/7.68.0"

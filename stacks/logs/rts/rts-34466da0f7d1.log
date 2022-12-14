@@ -1,0 +1,36 @@
+Load environment configuration
+(node:1369) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+RTS version v1.8.12 running at http://localhost:8091
+Watching MongoDB
+Caught exception: TypeError: Cannot read property 'clusterTime' of undefined
+Exception origin: uncaughtException
+/opt/appsmith/rts/node_modules/mongodb/lib/core/wireprotocol/command.js:53
+      session.clusterTime.clusterTime.greaterThan(clusterTime.clusterTime)
+                                                              ^
+
+TypeError: Cannot read property 'clusterTime' of undefined
+    at _command (/opt/appsmith/rts/node_modules/mongodb/lib/core/wireprotocol/command.js:53:63)
+    at command (/opt/appsmith/rts/node_modules/mongodb/lib/core/wireprotocol/command.js:28:5)
+    at Object.getMore (/opt/appsmith/rts/node_modules/mongodb/lib/core/wireprotocol/get_more.js:92:3)
+    at Connection.getMore (/opt/appsmith/rts/node_modules/mongodb/lib/cmap/connection.js:179:8)
+    at /opt/appsmith/rts/node_modules/mongodb/lib/core/sdam/server.js:333:12
+    at Object.callback (/opt/appsmith/rts/node_modules/mongodb/lib/cmap/connection_pool.js:345:7)
+    at processWaitQueue (/opt/appsmith/rts/node_modules/mongodb/lib/cmap/connection_pool.js:468:23)
+    at /opt/appsmith/rts/node_modules/mongodb/lib/cmap/connection_pool.js:236:28
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+Load environment configuration
+(node:1497) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+RTS version v1.8.12 running at http://localhost:8091
+Watching MongoDB
+GET / 302 33 - 5.145 ms
+GET /rts-api/v1/health-check 200 16 - 3.204 ms
+GET / 302 33 - 0.615 ms
+GET / 302 33 - 0.575 ms
+GET / 302 33 - 0.698 ms
+GET / 302 33 - 0.416 ms
+GET / 302 33 - 0.602 ms
+GET / 302 33 - 0.593 ms
+GET / 302 33 - 0.471 ms
+GET / 302 33 - 0.477 ms

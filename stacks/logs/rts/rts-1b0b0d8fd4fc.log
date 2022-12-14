@@ -1,0 +1,104 @@
+Load environment configuration
+(node:1370) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+RTS version v1.8.12 running at http://localhost:8091
+Watching MongoDB
+GET / 302 33 - 16.578 ms
+GET /rts-api/v1/health-check 200 16 - 3.200 ms
+GET / 302 33 - 0.634 ms
+GET / 302 33 - 0.698 ms
+GET / 302 33 - 0.667 ms
+GET / 302 33 - 0.572 ms
+GET / 302 33 - 0.567 ms
+GET / 302 33 - 0.555 ms
+GET / 302 33 - 0.524 ms
+GET / 302 33 - 0.433 ms
+GET / 302 33 - 0.509 ms
+GET / 302 33 - 0.449 ms
+GET / 302 33 - 0.726 ms
+GET / 302 33 - 0.491 ms
+GET / 302 33 - 0.517 ms
+GET / 302 33 - 0.519 ms
+GET / 302 33 - 0.395 ms
+GET / 302 33 - 0.436 ms
+GET / 302 33 - 0.548 ms
+GET / 302 33 - 0.545 ms
+GET / 302 33 - 0.508 ms
+GET / 302 33 - 0.599 ms
+GET / 302 33 - 0.438 ms
+GET / 302 33 - 0.551 ms
+GET / 302 33 - 0.513 ms
+GET / 302 33 - 0.497 ms
+GET / 302 33 - 0.598 ms
+GET / 302 33 - 0.513 ms
+GET / 302 33 - 0.398 ms
+GET / 302 33 - 0.403 ms
+GET / 302 33 - 0.482 ms
+GET / 302 33 - 0.488 ms
+GET / 302 33 - 0.494 ms
+GET / 302 33 - 0.533 ms
+GET / 302 33 - 0.500 ms
+GET / 302 33 - 0.453 ms
+GET / 302 33 - 0.388 ms
+GET / 302 33 - 0.581 ms
+GET / 302 33 - 0.436 ms
+GET / 302 33 - 0.565 ms
+GET / 302 33 - 0.389 ms
+GET / 302 33 - 0.424 ms
+GET / 302 33 - 0.518 ms
+GET / 302 33 - 0.369 ms
+GET / 302 33 - 0.369 ms
+GET / 302 33 - 0.516 ms
+GET / 302 33 - 0.556 ms
+GET / 302 33 - 0.458 ms
+GET / 302 33 - 0.409 ms
+GET / 302 33 - 0.535 ms
+Load environment configuration
+(node:1368) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+RTS version v1.8.12 running at http://localhost:8091
+Watching MongoDB
+Caught exception: TypeError: Cannot read property 'clusterTime' of undefined
+Exception origin: uncaughtException
+/opt/appsmith/rts/node_modules/mongodb/lib/core/wireprotocol/command.js:53
+      session.clusterTime.clusterTime.greaterThan(clusterTime.clusterTime)
+                                                              ^
+
+TypeError: Cannot read property 'clusterTime' of undefined
+    at _command (/opt/appsmith/rts/node_modules/mongodb/lib/core/wireprotocol/command.js:53:63)
+    at command (/opt/appsmith/rts/node_modules/mongodb/lib/core/wireprotocol/command.js:28:5)
+    at Object.getMore (/opt/appsmith/rts/node_modules/mongodb/lib/core/wireprotocol/get_more.js:92:3)
+    at Connection.getMore (/opt/appsmith/rts/node_modules/mongodb/lib/cmap/connection.js:179:8)
+    at /opt/appsmith/rts/node_modules/mongodb/lib/core/sdam/server.js:333:12
+    at Object.callback (/opt/appsmith/rts/node_modules/mongodb/lib/cmap/connection_pool.js:345:7)
+    at processWaitQueue (/opt/appsmith/rts/node_modules/mongodb/lib/cmap/connection_pool.js:468:23)
+    at /opt/appsmith/rts/node_modules/mongodb/lib/cmap/connection_pool.js:236:28
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+Load environment configuration
+(node:1506) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+RTS version v1.8.12 running at http://localhost:8091
+Watching MongoDB
+GET / 302 33 - 6.155 ms
+GET /rts-api/v1/health-check 200 16 - 3.752 ms
+GET / 302 33 - 0.692 ms
+GET / 302 33 - 4.737 ms
+GET / 302 33 - 0.875 ms
+ns:/page/edit# socket SZGYa5oL8rDY2d6GAAAC joined the room page:639954c7b194073323d2208e
+ns:/# socket OopRnO-gjBKVkXBxAAAB joined the room app:639954c7b194073323d2207a
+ns:/# socket OopRnO-gjBKVkXBxAAAB left the room app:639954c7b194073323d2207a
+ns:/# socket OopRnO-gjBKVkXBxAAAB joined the room app:639954c7b194073323d2207a
+GET / 302 33 - 0.515 ms
+ns:/page/edit # socket SZGYa5oL8rDY2d6GAAAC left the room page:639954c7b194073323d2208e
+ns:/page/edit# socket SZGYa5oL8rDY2d6GAAAC joined the room page:639954c7b194073323d22087
+ns:/# socket OopRnO-gjBKVkXBxAAAB left the room app:639954c7b194073323d2207a
+ns:/# socket OopRnO-gjBKVkXBxAAAB joined the room app:639954c7b194073323d2207a
+GET / 302 33 - 0.542 ms
+ns:/page/edit # socket SZGYa5oL8rDY2d6GAAAC left the room page:639954c7b194073323d22087
+ns:/page/edit# socket SZGYa5oL8rDY2d6GAAAC joined the room page:639954c7b194073323d2208c
+ns:/# socket OopRnO-gjBKVkXBxAAAB left the room app:639954c7b194073323d2207a
+ns:/# socket OopRnO-gjBKVkXBxAAAB joined the room app:639954c7b194073323d2207a
+GET / 302 33 - 1.154 ms
+GET / 302 33 - 0.821 ms
+GET / 302 33 - 0.751 ms
+GET / 302 33 - 1.133 ms
